@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/scripts :: head" />
+</head>
+<body>
+	<!-- Nav bar -->
+	<nav th:replace="fragments/header :: common-navbar" />
+
+	<div class="container-fluid">
+		<div class="row">
+			<!-- Corousel -->
+			<div class="col-md-8">
+				<div class="row container-fluid">
+					<!--Carousel Wrapper-->
+					<div id="carousel-example-2" class="carousel slide carousel-fade"
+						data-ride="carousel container">
+						<!--Indicators-->
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-example-2" data-slide-to="0"
+								class="active"></li>
+							<li data-target="#carousel-example-2" data-slide-to="1"></li>
+							<li data-target="#carousel-example-2" data-slide-to="2"></li>
+						</ol>
+						<!--/.Indicators-->
+						<!--Slides-->
+						<div class="carousel-inner" role="listbox">
+							<div class="carousel-item active">
+								<div class="view">
+									<img class="d-block w-100"
+										src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
+										alt="First slide">
+									<div class="mask rgba-black-light"></div>
+								</div>
+								<div class="carousel-caption">
+									<h3 class="h3-responsive">Light mask</h3>
+									<p>First text</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<!--Mask color-->
+								<div class="view">
+									<img class="d-block w-100"
+										src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
+										alt="Second slide">
+									<div class="mask rgba-black-strong"></div>
+								</div>
+								<div class="carousel-caption">
+									<h3 class="h3-responsive">Strong mask</h3>
+									<p>Secondary text</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<!--Mask color-->
+								<div class="view">
+									<img class="d-block w-100"
+										src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
+										alt="Third slide">
+									<div class="mask rgba-black-slight"></div>
+								</div>
+								<div class="carousel-caption">
+									<h3 class="h3-responsive">Slight mask</h3>
+									<p>Third text</p>
+								</div>
+							</div>
+						</div>
+						<!--/.Slides-->
+						<!--Controls-->
+						<a class="carousel-control-prev" href="#carousel-example-2"
+							role="button" data-slide="prev"> <span
+							class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+							class="sr-only">Previous</span>
+						</a> <a class="carousel-control-next" href="#carousel-example-2"
+							role="button" data-slide="next"> <span
+							class="carousel-control-next-icon" aria-hidden="true"></span> <span
+							class="sr-only">Next</span>
+						</a>
+						<!--/.Controls-->
+					</div>
+					<!--/.Carousel Wrapper-->
+				</div>
+
+
+				<div class="row container-fluid"></div>
+			</div>
+
+
+			<!-- Other Information -->
+			<div class="col-md-4">
+
+				<!-- Customs Exchage Rates -->
+				<button class="btn orange lighten-4 container-fluid" type="button"
+					data-toggle="collapse" data-target="#exchageRate"
+					aria-expanded="false" aria-controls="collapseExchageRate">
+					Customs Exchage Rates</button>
+				<div class="collapse container-fluid" id="exchageRate">
+					<div>Anim pariatur cliche reprehenderit, enim eiusmod high
+						life accusamus terry richardson ad squid. Nihil anim keffiyeh
+						helvetica, craft beer labore wes anderson cred nesciunt sapiente
+						ea proident.</div>
+				</div>
+				<button class="btn orange lighten-4 container-fluid" type="button"
+					data-toggle="collapse" data-target="#exchageRate2"
+					aria-expanded="false" aria-controls="collapseExchageRate2">
+					Agencies Services</button>
+				<div class="collapse container-fluid" id="exchageRate2">
+					<div class="container-fluid">Anim pariatur cliche
+						reprehenderit, enim eiusmod high life accusamus terry richardson
+						ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes
+						anderson cred nesciunt sapiente ea proident.</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+
+	<!--  -->
+	<br />
+	<!-- FOOTER -->
+	<footer class="main-footer"
+		th:replace="fragments/footer :: footer-landing"></footer>
+
+
+	<!-- REQUIRED JS SCRIPTS -->
+	<span th:replace="fragments/scripts :: body-scripts"></span>
+</body>
+</html>
